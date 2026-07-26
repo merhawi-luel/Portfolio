@@ -1,0 +1,34 @@
+.contact {
+  padding: 100px 6vw;
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 1px solid #2a2620;
+}
+
+.contact__heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f2ece0;
+  margin-bottom: 16px;
+}
+
+.contact__lede {
+  color: #8a8478;
+  margin-bottom: 28px;
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact__links a {
+  color: #f2ece0;
+  font-size: 0.95rem;
+  width: fit-content;
+}
+
+.contact__links a:hover {
+  color: #e8631a;
+}

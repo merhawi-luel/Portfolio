@@ -1,16 +1,32 @@
+import {
+  SiReact, SiNextdotjs, SiJavascript,
+  SiNodedotjs, SiExpress,
+  SiPostgresql, SiMongodb,
+  SiPython, SiNumpy, SiPandas,
+} from "react-icons/si";
+import { FiCode } from "react-icons/fi";
+import ROADMAPP from "./assets/ROADMAP.png"
+import Mentora from "./assets/Mentora.png"
+
+
+
+
 export const profile = {
   name: "Merhawi Luel",
-  role: "Self-Taught Full Stack Developer| Enthusiastic in ML/AI | Data Analyst ",
+  role: "Self-Taught Full Stack Developer| Enthusiastic in ML/AI | n8n automation ",
   intro: "I build modern web applications and spend my off-hours going deep on machine learning from first principles.",
   location: "ADDIS ABABA,ETHIOPIA",
   email: "MerhawiLuel63@gmail.com",
   github: "https://github.com/merhawi-luel",
   linkedin: "https://www.linkedin.com/in/merhawi-luel-tafere-712076330",
+   telegram: "https://t.me/Merhawi_Luel",
+  twitter: "https://x.com/Merhawi_Luel",
+  leetcode: "https://leetcode.com/Mera4k/",
 };
 export const about = {
   paragraphs: [
-    "I'm a Computer Science student at Addis Ababa University, and most of what I know I taught myself before anyone assigned it to me — Python, JavaScript, React, and now the math underneath machine learning. I like understanding how something works before I trust myself to build with it.",
-    "Right now I'm deep in a self-directed ML roadmap — CS229 notes, implementing algorithms from scratch instead of just calling a library — while shipping real full-stack projects on the side. I'm not interested in looking busy. I'm interested in being able to build the thing I said I'd build.",
+    "I create scalable web applications, automate business workflows with n8n, and enjoy turning ideas into products that make a real impact.",
+    "My current focus is building a strong foundation in machine learning by studying the underlying mathematics and implementing algorithms from scratch rather than relying solely on libraries. Alongside that, I continue to design, build, and deploy full-stack applications that solve real-world problems.",
   ],
 };
 
@@ -27,13 +43,43 @@ export const navLinks = [
   { id: "n3", label: "Projects", href: "#projects" },
   { id: "n4", label: "Contact", href: "#contact" },
 ];
-export const projects = [
+
+ export const projects = [
   {
     id: "p1",
-    title: "Your Project Name",
-    description: "One sentence describing what it does and why it exists.",
-    stack: ["React", "Node.js"],
-    liveUrl: "",
-    githubUrl: "https://github.com/merhawi-luel/your-repo",
+    title: "ROADMAPAPP",
+    description: "create a custom made roadmap.",
+    stack: ["Next.js", "React", "MongoDB"],
+    liveUrl: "https://roadmap-app-1xyt-delta.vercel.app/roadmaps",
+    liveLabel: "Try it ",
+    githubUrl: "https://github.com/merhawi-luel/ROADMAP_APP",
+    screenshot: ROADMAPP
   },
+  {
+    id: "p2",
+    title: "Mentora",
+    description: "Find your tutor with choice.",
+    stack: ["Next.js", "React", "MongoDB"],
+    liveUrl: "not found",
+    liveLabel: "Try it ",
+    githubUrl: "https://github.com/merhawi-luel/Mentora",
+    screenshot: Mentora
+  }
+  // ...your other projects, same shape
 ];
+export const iconMap = {
+  React: SiReact,
+  "Next.js": SiNextdotjs,
+  JavaScript: SiJavascript,
+  "Node.js": SiNodedotjs,
+  "Express.js": SiExpress,
+  PostgreSQL: SiPostgresql,
+  MongoDB: SiMongodb,
+  Python: SiPython,
+  NumPy: SiNumpy,
+  Pandas: SiPandas,
+};
+
+export function getIcon(name) {
+  return iconMap[name] || FiCode;
+}

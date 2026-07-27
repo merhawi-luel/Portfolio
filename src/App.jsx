@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { profile, navLinks, about, skills, projects } from "./data";
+import TechMarquee from "./components/TechMarquee";
 
 function App() {
   return (
@@ -19,12 +20,18 @@ function App() {
       />
       <About paragraphs={about.paragraphs} />
       <Skills skills={skills} />
+      <section className="marquee-section">
+  <TechMarquee items={skills.flatMap((s) => s.items)} />
+</section>
       <Projects projects={projects} />
       <Contact
-        email={profile.email}
-        github={profile.github}
-        linkedin={profile.linkedin}
-      />
+  email={profile.email}
+  github={profile.github}
+  linkedin={profile.linkedin}
+  telegram={profile.telegram}
+  twitter={profile.twitter}
+  leetcode={profile.leetcode}
+/>
       <Footer name={profile.name} />
     </>
   );

@@ -1,8 +1,17 @@
 .about {
   padding: 100px 6vw;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   border-top: 1px solid #2a2620;
+}
+
+.about__label {
+  font-size: 0.72rem;
+  color: #8a8478;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .about__heading {
@@ -12,9 +21,44 @@
   margin-bottom: 28px;
 }
 
+.about__quote {
+  border-left: 2px solid #e8631a;
+  padding-left: 20px;
+  margin: 0 0 28px;
+}
+
+.about__quote p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #f2ece0;
+  font-style: italic;
+}
+
 .about__paragraph {
   color: #8a8478;
   font-size: 1rem;
   max-width: 620px;
   margin-bottom: 18px;
+}
+
+.about__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.about__chip {
+  font-size: 0.75rem;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: #1e1b17;
+  color: #8a8478;
+  border: 1px solid #2a2620;
+}
+
+.about__chip--accent {
+  background: rgba(232, 99, 26, 0.12);
+  color: #e8631a;
+  border-color: transparent;
 }

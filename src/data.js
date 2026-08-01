@@ -7,6 +7,7 @@ import {
 import { FiCode } from "react-icons/fi";
 import ROADMAPP from "./assets/ROADMAP.png"
 import Mentora from "./assets/Mentora.png"
+import Weekly from  "./assets/Screenshot 2026-08-01 155215.png"
 
 
 
@@ -63,6 +64,16 @@ export const navLinks = [
     liveUrl: "not found",
     liveLabel: "Try it ",
     githubUrl: "https://github.com/merhawi-luel/Mentora",
+    screenshot: Weekly
+  },
+   {
+    id: "p3",
+    title: "WEEKLY",
+    description: "WEEKLY PLANNER WITH FINE UI",
+    stack: ["Next.js", "React", "MongoDB"],
+    liveUrl: "https://weeklly.vercel.app/",
+    liveLabel: "Try it ",
+    githubUrl: "https://github.com/merhawi-luel/WEEKLY",
     screenshot: Mentora
   }
   // ...your other projects, same shape

@@ -64,7 +64,7 @@ export const navLinks = [
     liveUrl: "not found",
     liveLabel: "Try it ",
     githubUrl: "https://github.com/merhawi-luel/Mentora",
-    screenshot: Weekly
+    screenshot: Mentora
   },
    {
     id: "p3",
@@ -74,7 +74,7 @@ export const navLinks = [
     liveUrl: "https://weeklly.vercel.app/",
     liveLabel: "Try it ",
     githubUrl: "https://github.com/merhawi-luel/WEEKLY",
-    screenshot: Mentora
+    screenshot: Weekly
   }
   // ...your other projects, same shape
 ];
